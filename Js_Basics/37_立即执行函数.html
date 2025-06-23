@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>立即执行函数</title>
+</head>
+
+<body>
+  <script>
+    // 内部小括号是形参，外部小括号是实参
+    (function () {
+      console.log(1)
+    })();
+    // 1.第一种写法
+    (function () {
+      console.log(78)
+    })();
+    (function () {
+      console.log(111)
+    })();
+    (function (x, y) {
+      console.log(x + y)
+    })(1, 2);
+    // 2.第二种写法
+    (function () { }())
+  </script>
+</body>
+
+</html>

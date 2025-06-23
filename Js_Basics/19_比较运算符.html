@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>比较运算符</title>
+</head>
+
+<body>
+  <script>
+    console.log(3 > 5)
+    console.log(3 >= 3)
+    console.log(2 == 2)
+    // 有隐式转换
+    console.log(2 == '2')
+    console.log(undefined == null)
+    // === 判断值 和 数据类型是否一样
+    // 以后是否相等 请用 ===
+    console.log(2 === '2')
+    console.log(NaN === NaN) // 不等于任何人，包括自己
+    console.log(2 !== '2')
+    console.log('---------------------')
+    console.log('a' < 'b') // ASCII a为97 b为98
+    console.log('aa' < 'ab') // true 
+    console.log('aa' < 'aac') // true
+    console.log('aa' < 'a') // false
+    console.log('---------------------')
+  </script>
+</body>
+
+</html>

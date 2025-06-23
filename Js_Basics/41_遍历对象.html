@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>遍历对象</title>
+</head>
+
+<body>
+  <script>
+    let arr = ['ping', 'red', 'blue']
+    // for in 不推荐遍历数组
+    // for (let k in arr) {
+    //   console.log(arr[k]) //k打印数组的下标
+    // }
+    let obj = {
+      uname: 'pink老师',
+      age: 18,
+      gender: '男'
+    }
+    // 遍历对象
+    for (let k in obj) {
+      console.log(k) //k是属性名 'uname' 'age' 'gender'
+      console.log(obj[k])
+    }
+  </script>
+</body>
+
+</html>

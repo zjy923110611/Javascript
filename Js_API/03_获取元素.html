@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>获取元素</title>
+</head>
+
+<body>
+  <ul class="nav">
+    <li>我的首页</li>
+    <li>产品介绍</li>
+    <li>联系方式</li>
+  </ul>
+  <script>
+    // const nav = document.querySelectorAll('ul li')
+    // const li = document.querySelector('ul li:first-child')
+    // console.log(nav, li)
+
+    // 获取元素
+    const lis = document.querySelectorAll('.nav li')
+    for (let i = 0; i < lis.length; i++) {
+      console.log(lis[i])
+    }
+    // console.log(lis)
+  </script>
+</body>
+
+</html>

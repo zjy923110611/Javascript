@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>对象的使用</title>
+</head>
+
+<body>
+  <script>
+    let pink = {
+      uname: 'pink老师',
+      age: 18,
+      gender: '女'
+    }
+    // console.log(pink)
+
+    // 声明
+    let goods = {
+      'good-name': '小米10青春版',
+      num: '100012816024',
+      weight: '0.55kg',
+      address: '中国大陆'
+    }
+    goods['good-name'] = '小米10 PLUS'
+    goods.color = '粉色'
+    // console.log(goods)
+
+    // 使用属性 查 对象名.属性
+    //   console.log(goods.address)
+
+    //   // 改 性别改为男
+    //   pink.gender = '男'
+    //   console.log(pink.gender)
+
+    //   // 增 新增hoppy属性
+    //   pink.hoppy = '篮球'
+    //   console.log(pink)
+
+    //   // 删 删除age属性
+    //   delete pink.age
+    //   console.log(pink)
+
+    // 查的另外一种属性 对象名[属性名]
+    console.log(goods['good-name'])
+    console.log(goods['num'])
+    console.log(goods['weight'])
+    console.log(goods['address'])
+    console.log(goods)
+  </script>
+</body>
+
+</html>

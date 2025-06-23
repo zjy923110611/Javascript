@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>封装函数</title>
+</head>
+
+<body>
+  <script>
+    // 求两个数的和
+    // function getSum() {
+    //   let num1 = +prompt('输入第一个数：')
+    //   let num2 = +prompt('输入第二个数：')
+    //   document.write(num1 + num2)
+    // }
+    // getSum()
+
+    // 求1-100累加和
+
+    // function getSum() {
+    //   let sum = 0
+    //   for (i = 1; i <= 100; i++) {
+    //     sum += i
+    //   }
+    //   document.write(sum)
+    // }
+    // getSum()
+
+
+    function getSum(start, end) { //形参 形式上的参数
+      let sum = 0
+      for (i = start; i <= end; i++) {
+        sum += i
+      }
+      document.write(sum)
+    }
+    // getSum(1, 50) //实参
+    // getSum()
+    start = +prompt('请输入一个数：')
+    end = +prompt('请输入一个数：')
+
+    getSum(start, end)
+  </script>
+</body>
+
+</html>

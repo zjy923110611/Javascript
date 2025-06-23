@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>通过类名的形式修改样式</title>
+  <style>
+    .nav {
+      color: red;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+
+    .box {
+      width: 300px;
+      height: 300px;
+      background-color: blue;
+      padding: 10px;
+      margin: 100px auto;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav">123</div>
+  <script>
+    // 1.获取元素
+    const div = document.querySelector('div')
+    // 2.添加内容 class 是个关键字 我们用ClassName
+    div.className = 'nav box'
+  </script>
+</body>
+
+</html>

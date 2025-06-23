@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>显式转换</title>
+</head>
+
+<body>
+  <script>
+    let str = '123'
+    console.log(Number(str))
+    // let num = +prompt('请输入你的年薪：')
+    // let num = Number(prompt('请输入你的年薪：'))
+    // console.log(Number(num))
+    // console.log(num)
+    console.log(parseInt('12px'))
+    console.log(parseInt('12.45px')) // 12
+    console.log(parseInt('avc12.45px')) // NaN
+    // ----------------------------------------
+    console.log(parseFloat('12px'))
+    console.log(parseFloat('12.45px')) // 12.45
+    console.log(parseFloat('avc12.45px')) // NaN
+  </script>
+</body>
+
+</html>

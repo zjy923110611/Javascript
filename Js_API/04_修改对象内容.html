@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="box">我是文字内容</div>
+  <div class="strong">你好！</div>
+  <script>
+    // // 1.修改文字内容
+    const box = document.querySelector('.box')
+    const strong = document.querySelector('.strong')
+    // // 2.获取文字内容
+    // console.log(box.innerText)
+    // box.innerText = '我是一个盒子' // 修改文字内容
+
+    // 3.innerHTML解析标签
+    console.log(box.innerHTML)
+    box.innerHTML = '<strong>我要更换</strong>'
+
+    console.log(strong.innerHTML)
+    strong.innerHTML = '<strong>HELLO!</strong>'
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>for循环的基本使用</title>
+</head>
+
+<body>
+  <script>
+    // for (let i = 1; i <= 3; i++) {
+    //   document.write('XiXi')
+    // }
+
+    // 打印数组
+    let arr = ['1', '2', '3', '4', '5', '6']
+    // console.log(arr[0])
+    // for (i = 0; i <= arr.length - 1; i++) {
+    //   document.writeln(arr[i])
+    // }
+    // 必须从0开始，因为数组索引号从0开始
+    // 遍历数组
+    for (let i = 0; i < arr.length; i++) {
+      document.writeln(arr[i])
+    }
+    // 无限循环
+    for (; ;) {
+      document.write('1')
+    }
+  </script>
+</body>
+
+</html>

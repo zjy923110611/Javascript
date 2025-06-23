@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>对象中的方法</title>
+</head>
+
+<body>
+  <script>
+    let obj = {
+      uname: '刘德华',
+      song: function (x, y) {
+        // console.log('冰雨')
+        // console.log('唱歌')
+        return '唱歌'
+      },
+      dance: function () {
+        console.log('跳舞')
+      }
+    }
+    // 方法的调用
+    let re = obj.song()
+    console.log(re)
+    obj.dance()
+  </script>
+</body>
+
+</html>
