@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // const date = new Date()
+    // // 1.getTime()
+    // console.log(date.getTime())
+    // 2.+new Date()
+    console.log(+new Date())
+    // 3.Date.now()
+    console.log(Date.now()) //只能得到当前的时间戳
+
+    // 2. +new Date
+    console.log(+new Date())
+    console.log('----------')
+    console.log(+new Date('2024-7-4 20:30:00'))
+
+    // 我要根据日期 Day() 0-6 返回 星期一
+    const arr = ['星期天', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六']
+    // const date = new Date()
+    console.log(new Date().getDay())
+    console.log(arr[new Date().getDay()])
+  </script>
+</body>
+
+</html>

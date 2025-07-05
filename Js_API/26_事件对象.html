@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- <button>点击</button> -->
+  <input type="text">
+  <script>
+    // const btn = document.querySelector('button')
+    // 事件监听里面的第一个参数是事件对象
+    // btn.addEventListener('click', function (e) {
+    //   console.log(e)
+    // })
+    const input = document.querySelector('input')
+    input.addEventListener('keyup', function (e) {
+      // console.log(11)
+      // console.log(e.key)
+      if (e.key === 'Enter') {
+        console.log('我按了回车')
+      }
+    })
+  </script>
+</body>
+
+</html>

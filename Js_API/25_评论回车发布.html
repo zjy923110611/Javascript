@@ -122,6 +122,8 @@
   <script>
     const tx = document.querySelector('#tx')
     const total = document.querySelector('.total')
+    const item = document.querySelector('.item')
+    const text = document.querySelector('.text')
     // 1.当文本域获得焦点 就让total 显示出来
     tx.addEventListener('focus', function () {
       total.style.opacity = 1
@@ -135,6 +137,23 @@
       // console.log(11)
       console.log(tx.value.length) //得到输入的长度
       total.innerHTML = `${tx.value.length}/200字`
+    })
+    // 4.按下回车发布评论
+    tx.addEventListener('keyup', function (e) {
+      // 只有按下键盘回车键才会触发
+      if (e.key === 'Enter') {
+        // 如果用户输入的不为空就显示和打印
+        // if (tx.value.trim() !== '') {
+        if (tx.value.trim()) {
+          item.style.display = 'block'
+          // console.log(tx.value) //用户输入的内容
+          text.innerHTML = tx.value
+        }
+        // 按下回车清空文本域
+        tx.value = ''
+        // 按下回车之后 就要把字符统计复原
+        total.innerHTML = '0/200字'
+      }
     })
   </script>
 </body>

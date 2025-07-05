@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      background-color: pink;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>我是老大
+
+    </li>
+    <li>我是老大2
+
+    </li>
+  </ul>
+  <script>
+    // 1.创建节点
+    // const div = document.createElement('div')
+    // // console.log(div)
+    // // 插入到这个父元素的最后
+    // 2.追加节点 作为最后一个子元素
+    // document.body.appendChild(div)
+    // const ul = document.querySelector('ul')
+    // const li = document.createElement('li')
+
+    // li.innerHTML = '我是li'
+    // ul.appendChild(li)
+    // ul.oppendChild(li)
+    // 3.追加节点
+    // insertBefore(插入的元素，放到那个元素的前面)
+    // ul.insertBefore(li, ul.children[0])
+
+    const ul = document.querySelector('ul')
+    const li = document.createElement('li')
+    li.innerHTML = 'xixi'
+    ul.insertBefore(li, ul.children[1])
+  </script>
+</body>
+
+</html>
