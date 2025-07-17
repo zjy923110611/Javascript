@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // const fn = function fn() {
+    //   console.log(123)
+    // }
+
+    // 1.箭头函数 基本语法
+    // const fun = () => {
+    //   console.log(123)
+    // }
+    // fn()
+    // fun()
+
+    // const fn = (x) => {
+    //   console.log(x)
+    // }
+    // fn(1)
+
+    // 2.函数只有一个形参的时候 ()可以省略
+    // const fn = x => {
+    //   console.log(x)
+    // }
+    // fn(2)
+
+    // 3.函数只有一行代码时 可以省略{}
+    // const fn = x => console.log(x)
+    // fn(2)
+
+    // const fn = (x, y) => x + y
+    // console.log(fn(1, 2))
+
+
+    // 4.函数只有一行代码时 可以省略 return
+    // const fn = x => x + x
+    // console.log(fn(1))
+
+    // 4.函数可以直接返回一个对象
+    const fn = (uname) => ({ uname: uname })
+    console.log(fn('刘德华'))
+  </script>
+</body>
+
+</html>

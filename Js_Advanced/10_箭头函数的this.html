@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 谁调用的这个函数 this就调用谁
+    // console.log(this)
+    // 普通函数
+    // function fn() {
+    //   console.log(this)
+    // }
+    // window.fn()
+
+    // 对象方法里面的this
+    // const obj = {
+    //   name: 'andy',
+    //   sayHi: function () {
+    //     console.log(this)
+    //   }
+    // }
+    // obj.sayHi()
+
+    // 2.箭头函数的this 上一层作用域的this
+    // const fn = () => {
+    //   console.log(this)
+    // }
+    // fn()
+
+    // 对象方法箭头函数的this
+    // const obj = {
+    //   uname: 'pink老师',
+    //   sayHi: () => {
+    //     console.log(this) // 指向window
+    //   }
+    // }
+    // obj.sayHi()
+
+    const obj = {
+      uname: 'pink老师',
+      sayHi: function () {
+        let i = 10
+        const count = () => {
+          console.log(this)
+        }
+        count()
+      }
+    }
+    obj.sayHi()
+  </script>
+</body>
+
+</html>

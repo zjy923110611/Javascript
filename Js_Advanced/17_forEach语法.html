@@ -9,14 +9,12 @@
 
 <body>
   <script>
-    for (var i = 0; i < 3; i++) {
-      // 块作用域 let const 声明
-      console.log(i)
-    }
-    if (true) {
-      let i = 10
-    }
-    console.log(i)
+    const arr = ['red', 'green', 'pink']
+    // 只遍历 加强版的for循环
+    const result = arr.forEach(function (item, index) {
+      console.log(item, index) //数组元素 索引号
+    })
+    console.log(result)
   </script>
 </body>
 

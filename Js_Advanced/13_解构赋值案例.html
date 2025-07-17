@@ -9,14 +9,14 @@
 
 <body>
   <script>
-    for (var i = 0; i < 3; i++) {
-      // 块作用域 let const 声明
-      console.log(i)
+    function getValue() {
+      return [100, 60]
     }
-    if (true) {
-      let i = 10
-    }
-    console.log(i)
+    const [max, min] = getValue()
+    console.log(max, min)
+
+    const [hr, lx, mi, fz] = ['海尔', '联想', '小米', '方正']
+    console.log(hr, lx, mi, fz)
   </script>
 </body>
 

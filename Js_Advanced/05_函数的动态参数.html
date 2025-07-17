@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function getSum() {
+      // arguments 动态参数 只存在于 函数里面
+      // console.log(arguments)
+      // 1.伪数组
+      let sum = 0
+      for (let i = 0; i < arguments.length; i++) {
+        sum += arguments[i]
+      }
+      // return sum
+      console.log(sum)
+    }
+    getSum(2, 3, 1, 1, 1, 1, 1)
+    // console.log(getSum(1, 1))
+  </script>
+</body>
+
+</html>

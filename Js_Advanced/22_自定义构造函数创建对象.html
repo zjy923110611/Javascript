@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    // 创建一个猪 构造函数
+    function Pig(uname, age) {
+      this.uname = uname
+      this.age = age
+    }
+    // console.log(new Pig('佩奇', 6))
+    // console.log(new Pig('乔治', 3))
+    // const p = new Pig('佩奇', 6)
+    // console.log(p)
+
+    function Goods(name, price, count) {
+      this.name = name
+      this.price = price
+      this.count = count
+    }
+    const xiaoMi = new Goods('小米', 1999, 20)
+    const huaWei = new Goods('华为', 3999, 59)
+    const vivo = new Goods('vivo', 1888, 100)
+    console.log(xiaoMi, huaWei, vivo)
+  </script>
+</body>
+
+</html>
