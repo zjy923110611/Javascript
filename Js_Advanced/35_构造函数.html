@@ -10,6 +10,7 @@
 <body>
   <script>
     // 构造函数 公共的属性和方法 封装到Star构造函数里面了
+    // 公共的属性写到 构造函数里面
     function Star(uname, age) {
       this.uname = uname
       this.age = age
@@ -17,6 +18,7 @@
       //   console.log('唱歌')
       // }
     }
+    // 公共的方法写到 原型对象里面 原型本质也是对象
     Star.prototype.sing = function () {
       console.log('唱歌')
     }
