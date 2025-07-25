@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    function fn(x, y) {
+      if (!x || !y) {
+        // console.log(11)
+        // throw '用户没有参数传递进来
+        throw new Error('没有参数传递进来')
+      }
+
+      return x + y
+    }
+    console.log(fn())
+    // fn()
+  </script>
+</body>
+
+</html>
